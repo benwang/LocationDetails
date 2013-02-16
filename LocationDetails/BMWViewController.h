@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface BMWViewController : UIViewController
+
+@interface BMWViewController : UIViewController <CLLocationManagerDelegate>//protocol declaration
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
+- (void) stopUpdating;
+
+- (void) resumeUpdating;
 
 @end
