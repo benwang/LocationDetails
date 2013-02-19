@@ -36,8 +36,10 @@
     //Let's be honest. Satellite/natural view MUCH more interesting than map view
     self.mapView.mapType = MKMapTypeSatellite;
     
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:NO];
+    
     //Alert view initializations
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Turn on LocationServices to Use this App" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Exit", nil];
+    self.alertView = [[UIAlertView alloc] initWithTitle:@"Turn on LocationServices to Use this App" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Don't care", nil];
     self.alertView.delegate = self;
 }
 
@@ -105,16 +107,19 @@
         return TRUE;
     }
     else {
-//        self.alertView.
         return FALSE;
     }
 }
 
+- (void) showAlert {
+    [self.alertView show];
+}
+
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
-        
+        NSLog(@"Clicked OK");
     } else {
-        
+        NSLog(@"Wow.  Rude.");
     }
 }
 

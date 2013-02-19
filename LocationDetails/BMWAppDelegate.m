@@ -41,7 +41,7 @@
     }
     else {
         //create UIalert
-//        [(BMWViewController *) self.window.rootViewController ]
+        [(BMWViewController *) self.window.rootViewController showAlert];
     }
     
 }

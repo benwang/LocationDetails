@@ -22,6 +22,8 @@
 
 - (BOOL) isLocationOn;
 
+- (void) showAlert;
+
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
