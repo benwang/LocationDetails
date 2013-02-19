@@ -11,11 +11,17 @@
 #import <MapKit/MapKit.h>
 
 
-@interface BMWViewController : UIViewController <CLLocationManagerDelegate>//protocol declaration
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@interface BMWViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UIAlertViewDelegate>//protocol declaration
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
+
 
 - (void) stopUpdating;
 
 - (void) resumeUpdating;
+
+- (BOOL) isLocationOn;
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end

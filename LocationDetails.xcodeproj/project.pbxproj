@@ -26,6 +26,7 @@
 		25AA51B316C950E700D267EB /* LocationDetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA51B216C950E700D267EB /* LocationDetailsTests.m */; };
 		25AA51BD16C9514300D267EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AA51BC16C9514300D267EB /* MapKit.framework */; };
 		25AA51BF16C9514D00D267EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AA51BE16C9514D00D267EB /* CoreLocation.framework */; };
+		25AA51C816D0688400D267EB /* BMWUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA51C716D0688400D267EB /* BMWUIApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		25AA51B216C950E700D267EB /* LocationDetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsTests.m; sourceTree = "<group>"; };
 		25AA51BC16C9514300D267EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		25AA51BE16C9514D00D267EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25AA51C616D0688400D267EB /* BMWUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWUIApplication.h; sourceTree = "<group>"; };
+		25AA51C716D0688400D267EB /* BMWUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWUIApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				25AA519C16C950E700D267EB /* BMWViewController.h */,
 				25AA519D16C950E700D267EB /* BMWViewController.m */,
 				25AA518516C950E700D267EB /* Supporting Files */,
+				25AA51C616D0688400D267EB /* BMWUIApplication.h */,
+				25AA51C716D0688400D267EB /* BMWUIApplication.m */,
 			);
 			path = LocationDetails;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				25AA518B16C950E700D267EB /* main.m in Sources */,
 				25AA518F16C950E700D267EB /* BMWAppDelegate.m in Sources */,
 				25AA519E16C950E700D267EB /* BMWViewController.m in Sources */,
+				25AA51C816D0688400D267EB /* BMWUIApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
