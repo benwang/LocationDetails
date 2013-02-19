@@ -35,12 +35,10 @@
     self.mapView.showsUserLocation = YES;
     //Let's be honest. Satellite/natural view MUCH more interesting than map view
     self.mapView.mapType = MKMapTypeSatellite;
-    
-    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:NO];
-    
+        
     //Alert view initializations
     self.alertView = [[UIAlertView alloc] initWithTitle:@"Turn on LocationServices to Use this App" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Don't care", nil];
-    self.alertView.delegate = self;
+    self.alertView.delegate = self;//I call "show" in AppDelegate
 }
 
 - (void)didReceiveMemoryWarning
